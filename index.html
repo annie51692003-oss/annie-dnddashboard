@@ -116,22 +116,22 @@ fetch(API_URL)
   .then(data => {
 
     document.getElementById("STRadj")
-      .innerText = data.adCost;
+      .innerText = STRadj;
 
     document.getElementById("DEXadj")
-      .innerText = data.mom;
+      .innerText = DEXadj;
 
     document.getElementById("CONadj")
-      .innerText = data.cases;
+      .innerText = CONadj;
 
     document.getElementById("INTadj")
-      .innerText = data.erpTodo;
+      .innerText = INTadj;
 
     document.getElementById("WISadj")
-      .innerText = data.erpTodo;
+      .innerText = WISadj;
 
     document.getElementById("CHAadj")
-      .innerText = data.erpTodo;
+      .innerText = CHAadj;
 
     document.getElementById("updateTime")
       .innerText = "更新時間：" + data.updateTime;
