@@ -103,6 +103,48 @@ body{
     </div>
   </div>
 
+    <div class="card">
+    <div class="title">力量豁免</div>
+    <div id="STRept" class="value loading">
+      Loading...
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">敏捷豁免</div>
+    <div id="DEXept" class="value loading">
+      Loading...
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">體質豁免</div>
+    <div id="CONept" class="value loading">
+      Loading...
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">智力豁免</div>
+    <div id="INTept" class="value loading">
+      Loading...
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">感知豁免</div>
+    <div id="WISept" class="value loading">
+      Loading...
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">魅力豁免</div>
+    <div id="CHAept" class="value loading">
+      Loading...
+    </div>
+  </div>
+  
   <div id="updateTime" class="update">
   </div>
 
@@ -134,6 +176,24 @@ fetch(API_URL)
 
     document.getElementById("CHAadj")
       .innerText = data.CHAadj;
+
+    document.getElementById("STRept")
+      .innerText = data.STRept;
+
+    document.getElementById("DEXept")
+      .innerText = data.DEXept;
+
+    document.getElementById("CONept")
+      .innerText = data.CONept;
+
+    document.getElementById("INTept")
+      .innerText = data.INTept;
+
+    document.getElementById("WISept")
+      .innerText = data.WISept;
+
+    document.getElementById("CHAept")
+      .innerText = data.CHAept;
 
     document.getElementById("updateTime")
       .innerText = "更新時間：" + data.updateTime;
